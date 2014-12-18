@@ -1,0 +1,11 @@
+<p>
+  All Posts
+</p>
+Total Posts: {{postCount}}
+<ul>
+{{#each post in controller}}
+  <li>{{#link-to 'post' post}}{{post.title}}{{/link-to}}</li>
+{{/each}}
+</ul>
+
+{{outlet}}
